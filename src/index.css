@@ -19,3 +19,10 @@
     @apply absolute min-h-2.5 min-w-2.5 -top-2 -right-2 bg-red-500 rounded-full; 
 }
 
+body{
+    min-height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+}
