@@ -13,7 +13,7 @@ const Navbar = () => {
                     <div className="flex justify-between items-center">
                         <h2>Agiza Msosi.</h2>
                         {/* another way */}
-                        <ul className="flex space-x-2 text-slate-600">
+                        <ul className="flex space-x-2 text-pink-900">
                             <li onClick={() => setMenu('home')} className={menu === "home" ? "active":"px-3 py-1 cursor-pointer"}>home</li>
                             <li onClick={() => setMenu('menu')} className={menu === "menu" ? "active":"px-3 py-1 cursor-pointer"}>menu</li>
                             <li onClick={() => setMenu('mobile-app')} className={menu === "mobile-app" ? "active":"px-3 py-1 cursor-pointer"}>mobile-app</li>
@@ -26,7 +26,7 @@ const Navbar = () => {
                                 <SlBasket className="h-7 w-8 ml-0 cursor-pointer" />
                                 <div className="dot"></div>
                             </div>
-                            <button className="bg-transparent border-2 border-slate-500 py-1 px-6 cursor-pointer rounded-full text-sm hover:bg-slate-100">sign in</button>
+                            <button className="bg-transparent border-2 border-pink-900 py-1 px-6 cursor-pointer rounded-full text-base hover:bg-pink-100">sign in</button>
                         </div>
                     </div>
                 </div>
