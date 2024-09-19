@@ -8,7 +8,7 @@ import burger2 from './burger2.jpeg'
 import ugalisamaki from './ugalisamaki.jpeg'
 import mihogo from './mihogo.jpeg'
 import ndizirosti from './ndizirosti.jpeg'
-import chickrost from './chickrost'
+import chickrost from './chickrost.jpeg'
 import foodbg2 from './foodbg2.jpeg'
 import foodbg3 from './foodbg3.jpeg'
 import foodbg4 from './foodbg4.jpeg'
@@ -55,4 +55,55 @@ export const menuList = [
         name: 'ugali samaki',
         img: ugalisamaki
     }
+]
+
+export const foodList = [
+    {
+        id: 1,
+        name: 'burger',
+        img: burger,
+        price: 11000,
+        description: 'Food provide energy and customer utility',
+        category: 'Bites'
+    },
+    {
+        id: 2,
+        name: 'chips',
+        img: chips,
+        price: 3000,
+        description: 'Food provide energy and customer utility',
+        category: 'Bites'
+    },
+    {
+        id: 3,
+        name: 'kuku rosti',
+        img: chickrost,
+        price: 7000,
+        description: 'Food provide energy and customer utility',
+        category: 'Bites'
+    },
+    {
+        id: 4,
+        name: 'ndizi rosti',
+        img: ndizirosti,
+        price: 10000,
+        description: 'Food provide energy and customer utility',
+        category: 'Bites'
+    },
+    {
+        id: 5,
+        name: 'mihogo',
+        img: mihogo,
+        price: 1000,
+        description: 'Food provide energy and customer utility',
+        category: 'Bites'
+    },
+    {
+        id: 6,
+        name: 'ugali samaki',
+        img: ugalisamaki,
+        price: 11000,
+        description: 'Food provide energy and customer utility',
+        category: 'Bites'
+    },
 ]

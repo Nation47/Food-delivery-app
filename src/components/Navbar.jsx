@@ -24,7 +24,7 @@ const Navbar = () => {
                             <BiSearch className="h-7 w-8 cursor-pointer" />
                             <div className="relative">
                                 <SlBasket className="h-7 w-8 ml-0 cursor-pointer" />
-                                <div className="dot"></div>
+                                <div className="dot animate-bounce"></div>
                             </div>
                             <button className="bg-transparent border-2 border-pink-900 py-1 px-6 cursor-pointer rounded-full text-base hover:bg-pink-100">sign in</button>
                         </div>

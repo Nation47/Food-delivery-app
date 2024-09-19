@@ -16,7 +16,7 @@
 }
 
 .dot{
-    @apply absolute min-h-2.5 min-w-2.5 -top-2 -right-2 bg-red-500 rounded-full; 
+    @apply absolute min-h-2.5 min-w-2.5 -top-2 -right-2 bg-red-700 rounded-full; 
 }
 
 body{
