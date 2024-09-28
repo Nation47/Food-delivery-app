@@ -10,11 +10,11 @@
 
 
 .active{
-    @apply border-b-2 border-slate-500 px-3 py-1 cursor-pointer;
+    @apply border-b-2 border-slate-500  md:px-3 md:py-1 cursor-pointer;
 }
 
 .nav{
-    @apply px-2;
+    @apply px-1 md:px-2;
 }
 
 .dot{
@@ -27,4 +27,5 @@ body{
 
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }

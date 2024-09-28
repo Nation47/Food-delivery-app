@@ -33,27 +33,33 @@ export const assets = {
 export const menuList = [
     {
         name: 'burger',
-        img: burger
+        img: burger,
+        category: 'Bites'
     },
     {
         name: 'chips',
-        img: chips
+        img: chips,
+        category: 'Fast Food'
     },
     {
         name: 'kuku rosti',
-        img: chickrost
+        img: chickrost,
+        category: 'Lunch'
     },
     {
         name: 'ndizi rosti',
-        img: ndizirosti
+        img: ndizirosti,
+        category: 'Dinner'
     },
     {
         name: 'mihogo',
-        img: mihogo
+        img: mihogo,
+        category: 'Breakfast'
     },
     {
         name: 'ugali samaki',
-        img: ugalisamaki
+        img: ugalisamaki,
+        category: 'Dinner'
     }
 ]
 
@@ -72,7 +78,7 @@ export const foodList = [
         img: chips,
         price: 3000,
         description: 'Food provide energy and customer utility',
-        category: 'Bites'
+        category: 'Fast Food'
     },
     {
         id: 3,
@@ -80,7 +86,7 @@ export const foodList = [
         img: chickrost,
         price: 7000,
         description: 'Food provide energy and customer utility',
-        category: 'Bites'
+        category: 'Lunch'
     },
     {
         id: 4,
@@ -88,7 +94,7 @@ export const foodList = [
         img: ndizirosti,
         price: 10000,
         description: 'Food provide energy and customer utility',
-        category: 'Bites'
+        category: 'Dinner'
     },
     {
         id: 5,
@@ -96,7 +102,7 @@ export const foodList = [
         img: mihogo,
         price: 1000,
         description: 'Food provide energy and customer utility',
-        category: 'Bites'
+        category: 'Breakfast'
     },
     {
         id: 6,
@@ -104,6 +110,6 @@ export const foodList = [
         img: ugalisamaki,
         price: 11000,
         description: 'Food provide energy and customer utility',
-        category: 'Bites'
+        category: 'Dinner'
     },
 ]
