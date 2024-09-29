@@ -19,7 +19,7 @@ function App() {
   )
   return (
     <>
-      {showLogin ? <LoginPopUp /> : <></>}
+      {showLogin ? <LoginPopUp setShowLogin = {setShowLogin} /> : <></>}
       <RouterProvider router={router} />
     </>
   )
