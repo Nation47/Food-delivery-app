@@ -2,7 +2,6 @@ import { useState } from "react";
 import ExploreMenu from "../components/ExploreMenu";
 import Heading from "../components/Heading";
 import FoodDisplay from "../components/FoodDisplay";
-import Footer from "../components/Footer";
 import AppDownload from "../components/AppDownload";
 
 const HomePage = () => {
@@ -15,7 +14,6 @@ const HomePage = () => {
                 <FoodDisplay category={category} />
                 <AppDownload />
             </div>
-            <Footer />
         </>
     );
 }

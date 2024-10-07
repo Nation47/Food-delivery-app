@@ -12,7 +12,9 @@ const Navbar = ({setShowLogin}) => {
            <nav className="nav">
                 <div className="py-2 sm:py-4 sm:px-6 lg:px-8 m-auto max-w-7xl">
                     <div className="flex justify-between items-center">
-                        <h2 className='text-base md:text-lg font-medium sm:font-semibold text-orange-600'>agizaMsosi.com</h2>
+                        <Link to='/'>
+                            <h2 className='text-base md:text-lg font-medium sm:font-semibold text-orange-600'>agizaMsosi.com</h2>
+                        </Link>
                         {/* another way */}
                         <ul className="md:flex hidden md:space-x-2 capitalize text-orange-900">
                             <Link to='/' onClick={() => setMenu('home')} className={menu === "home" ? "active":"py-0.5 px-1 md:px-3 md:py-1 cursor-pointer"}>home</Link>
@@ -24,7 +26,9 @@ const Navbar = ({setShowLogin}) => {
                         <div className="flex space-x-2 md:space-x-4 items-center">
                             <BiSearch className=" text-2xl cursor-pointer" />
                             <div className="relative">
-                                <SlBasket className=" text-2xl cursor-pointer" />
+                                <Link to='/cart'> 
+                                    <SlBasket className=" text-2xl cursor-pointer" />
+                                </Link>
                                 <div className="dot animate-bounce"></div>
                             </div>
                             <button onClick={() => setShowLogin(true)} className="bg-transparent border-2 border-orange-700 py-1 px-4 md:px-6 cursor-pointer rounded-full md:text-base text-sm hover:bg-orange-200 capitalize">sign in</button>
