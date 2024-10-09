@@ -68,7 +68,7 @@ export const foodList = [
         id: 1,
         name: 'burger',
         img: burger,
-        price: 11000,
+        price: "11000",
         description: 'Food provide energy and customer utility',
         category: 'Bites'
     },
@@ -76,7 +76,7 @@ export const foodList = [
         id: 2,
         name: 'chips',
         img: chips,
-        price: 3000,
+        price: "3000",
         description: 'Food provide energy and customer utility',
         category: 'Fast Food'
     },
@@ -84,7 +84,7 @@ export const foodList = [
         id: 3,
         name: 'kuku rosti',
         img: chickrost,
-        price: 7000,
+        price: "7000",
         description: 'Food provide energy and customer utility',
         category: 'Lunch'
     },
@@ -92,7 +92,7 @@ export const foodList = [
         id: 4,
         name: 'ndizi rosti',
         img: ndizirosti,
-        price: 10000,
+        price: "10000",
         description: 'Food provide energy and customer utility',
         category: 'Dinner'
     },
@@ -100,7 +100,7 @@ export const foodList = [
         id: 5,
         name: 'mihogo',
         img: mihogo,
-        price: 1000,
+        price: "1000",
         description: 'Food provide energy and customer utility',
         category: 'Breakfast'
     },
@@ -108,7 +108,7 @@ export const foodList = [
         id: 6,
         name: 'ugali samaki',
         img: ugalisamaki,
-        price: 11000,
+        price: "11000",
         description: 'Food provide energy and customer utility',
         category: 'Dinner'
     },
