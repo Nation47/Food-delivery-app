@@ -1,11 +1,14 @@
 import {BiSearch } from 'react-icons/bi';
 import { SlBasket } from "react-icons/sl";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from 'react-router-dom';
+import { StoreContext } from '../context/StoreContext';
 
+// eslint-disable-next-line react/prop-types
 const Navbar = ({setShowLogin}) => {
 
     const [menu, setMenu] = useState("home");
+    const {getTotalCartAmount} = useContext(StoreContext);
 
     return (
         <>
@@ -29,7 +32,7 @@ const Navbar = ({setShowLogin}) => {
                                 <Link to='/cart'> 
                                     <SlBasket className=" text-2xl cursor-pointer" />
                                 </Link>
-                                <div className="dot animate-bounce"></div>
+                                <div className={getTotalCartAmount() === 0 ? " ":"dot animate-bounce"}></div>
                             </div>
                             <button onClick={() => setShowLogin(true)} className="bg-transparent border-2 border-orange-700 py-1 px-4 md:px-6 cursor-pointer rounded-full md:text-base text-sm hover:bg-orange-200 capitalize">sign in</button>
                         </div>

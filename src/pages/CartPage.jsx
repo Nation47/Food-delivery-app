@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { StoreContext } from "../context/StoreContext";
+import {useNavigate} from "react-router-dom"
 
 const CartPage = () => {
     const {cartItems, foodList, removeFromCart, getTotalCartAmount} = useContext(StoreContext);
+    const navigate = useNavigate()
 
     return (
         <>
@@ -21,7 +23,7 @@ const CartPage = () => {
                     {foodList.map((item,index) => {
                         if(cartItems[item.id] > 0) {
                             return (
-                                <div>
+                                <div key={index}>
                                     <div className="grid grid-cols-6 items-center text-sm text-black mx-0 my-3">
                                         <img className="w-14" src={item.img} alt="" />
                                         <p>{item.name}</p>
@@ -47,15 +49,15 @@ const CartPage = () => {
                             <hr className="my-2.5" />
                             <div className="flex justify-between text-gray-700"> 
                                 <p>Delivery Fee</p>
-                                <p>{5000} Tsh</p>
+                                <p>{getTotalCartAmount() === 0 ? 0 : 5000} Tsh</p>
                             </div>
                             <hr className="my-2.5" />
                             <div className="flex justify-between text-gray-700">
                                 <b>Total</b>
-                                <b>{getTotalCartAmount() + 5000} Tsh</b>
+                                <b>{getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 5000} Tsh</b>
                             </div>
                         </div>
-                        <button className="w-52 bg-orange-600 py-3  border-none cursor-pointer rounded-md text-white">PROCEED TO CHECKOUT</button>
+                        <button onClick={() => navigate('/order')} className="w-52 bg-orange-600 py-3  border-none cursor-pointer rounded-md text-white">PROCEED TO CHECKOUT</button>
                     </div>
                     <div className="flex-1">
                         <div>

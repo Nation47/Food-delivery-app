@@ -3,6 +3,7 @@ import { foodList } from "../assets/assets";
 
 export const StoreContext = createContext(null);
 
+// eslint-disable-next-line react/prop-types
 const StoreContextProvider = ({children}) => {
     const [cartItems, setCartItems] = useState({});
 
